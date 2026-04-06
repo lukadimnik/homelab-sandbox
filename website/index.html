@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luka — Engineering Manager & Software Developer</title>
+    <meta
+      name="description"
+      content="Personal site of Luka — engineering manager and software developer building thoughtful teams and reliable systems."
+    />
+    <meta name="theme-color" content="#0b0d12" />
+
+    <!-- Open Graph (placeholders) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Luka — Engineering Manager & Software Developer" />
+    <meta
+      property="og:description"
+      content="Personal site of Luka — engineering manager and software developer."
+    />
+    <meta property="og:image" content="assets/og-image.png" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c5cff'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='34' font-family='sans-serif' font-weight='700' fill='white'%3EL%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a class="nav__logo" href="#top">
+          <span class="nav__logo-mark">L</span>
+          <span class="nav__logo-text">Luka</span>
+        </a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__inner reveal">
+          <p class="hero__eyebrow">Hi, I'm Luka 👋</p>
+          <h1 class="hero__title">
+            Engineering Manager
+            <span class="grad">&amp;</span>
+            Software Developer
+          </h1>
+          <p class="hero__lede">
+            I build resilient software and the teams that ship it. I care about clear thinking,
+            calm execution, and the small details that compound into great products.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="#projects">See my work →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <header class="section__header reveal">
+            <span class="section__kicker">01 — About</span>
+            <h2 class="section__title">A short introduction</h2>
+          </header>
+
+          <div class="about reveal">
+            <div class="about__bio">
+              <p>
+                I'm an engineering leader with a developer's heart. I've spent the last decade
+                writing code, shipping products, and growing teams that take real ownership of the
+                things they build. I believe leadership is craft, just like software — practiced
+                quietly, refined over time, and measured in the outcomes of the people around you.
+              </p>
+              <p>
+                Outside of work I tinker with my homelab, read more than I should, and try to keep
+                my side projects small enough to actually finish.
+              </p>
+            </div>
+            <ul class="about__highlights">
+              <li>
+                <span class="about__num">10+</span>
+                <span class="about__label">years building software</span>
+              </li>
+              <li>
+                <span class="about__num">5+</span>
+                <span class="about__label">years leading teams</span>
+              </li>
+              <li>
+                <span class="about__num">∞</span>
+                <span class="about__label">1:1s and counting</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section section--alt">
+        <div class="container">
+          <header class="section__header reveal">
+            <span class="section__kicker">02 — Experience</span>
+            <h2 class="section__title">Where I've worked</h2>
+          </header>
+
+          <ol class="timeline">
+            <li class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__meta">
+                  <span class="timeline__role">Engineering Manager</span>
+                  <span class="timeline__where">Acme Corp · 2022 — Present</span>
+                </div>
+                <ul class="timeline__bullets">
+                  <li>Led a team of 8 engineers shipping the core platform used by 1M+ users.</li>
+                  <li>Rebuilt the on-call process, cutting paging volume by 60% in one quarter.</li>
+                  <li>Hired, mentored, and grew three engineers into senior roles.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__meta">
+                  <span class="timeline__role">Senior Software Engineer</span>
+                  <span class="timeline__where">Globex · 2019 — 2022</span>
+                </div>
+                <ul class="timeline__bullets">
+                  <li>Designed and shipped a real-time data pipeline handling 50k events/sec.</li>
+                  <li>Drove the migration from a monolith to a service-oriented architecture.</li>
+                  <li>Led the internal guild on testing practices and developer experience.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__meta">
+                  <span class="timeline__role">Software Engineer</span>
+                  <span class="timeline__where">Initech · 2016 — 2019</span>
+                </div>
+                <ul class="timeline__bullets">
+                  <li>Built customer-facing features across the web and mobile clients.</li>
+                  <li>Owned the design system used by 30+ engineers.</li>
+                  <li>Promoted twice in three years.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <header class="section__header reveal">
+            <span class="section__kicker">03 — Projects</span>
+            <h2 class="section__title">Things I've built</h2>
+          </header>
+
+          <div class="projects">
+            <article class="project reveal">
+              <h3 class="project__title">Homelab Platform</h3>
+              <p class="project__desc">
+                A self-hosted stack running media, photos, and personal services on a single mini
+                PC, fully reproducible from a Git repo.
+              </p>
+              <ul class="tags">
+                <li>Docker</li>
+                <li>k3s</li>
+                <li>Linux</li>
+              </ul>
+              <a class="project__link" href="#" aria-label="View Homelab Platform">View →</a>
+            </article>
+
+            <article class="project reveal">
+              <h3 class="project__title">Team Compass</h3>
+              <p class="project__desc">
+                A lightweight tool for engineering managers to run better 1:1s, track growth, and
+                spot patterns across a team over time.
+              </p>
+              <ul class="tags">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>Postgres</li>
+              </ul>
+              <a class="project__link" href="#" aria-label="View Team Compass">View →</a>
+            </article>
+
+            <article class="project reveal">
+              <h3 class="project__title">Pulse</h3>
+              <p class="project__desc">
+                A tiny status-page service designed to be embarrassingly simple to deploy and
+                impossible to misconfigure.
+              </p>
+              <ul class="tags">
+                <li>Go</li>
+                <li>SQLite</li>
+                <li>HTMX</li>
+              </ul>
+              <a class="project__link" href="#" aria-label="View Pulse">View →</a>
+            </article>
+
+            <article class="project reveal">
+              <h3 class="project__title">Notes on Leadership</h3>
+              <p class="project__desc">
+                A small collection of essays on engineering management — what I've learned, what
+                I'm still figuring out, and what I wish someone had told me earlier.
+              </p>
+              <ul class="tags">
+                <li>Writing</li>
+                <li>Leadership</li>
+              </ul>
+              <a class="project__link" href="#" aria-label="View Notes on Leadership">Read →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section--alt">
+        <div class="container contact reveal">
+          <header class="section__header">
+            <span class="section__kicker">04 — Contact</span>
+            <h2 class="section__title">Let's talk</h2>
+          </header>
+          <p class="contact__lede">
+            Looking for a thoughtful engineering leader, want to swap notes on management, or just
+            feel like saying hi? My inbox is open.
+          </p>
+          <a class="btn btn--primary btn--lg" href="mailto:hello@example.com">hello@example.com</a>
+          <ul class="socials">
+            <li><a href="#" rel="noopener">GitHub</a></li>
+            <li><a href="#" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Luka — built by hand, no frameworks.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
