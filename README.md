@@ -48,10 +48,12 @@ flowchart LR
 
 ## Roadmap
 
-### Stage 1 — CI/CD + TLS
+### Stage 1 — CI/CD
 - [ ] GitHub Actions: build → Trivy vulnerability scan → push with git-SHA tag
-- [ ] cert-manager with DNS-01 solver for wildcard TLS (`*.lukadimnik.com`)
-- [ ] HTTPS-only Ingress with HSTS
+- [ ] SBOM generated and uploaded as a build artifact
+- [ ] Deployment manifests updated to use the SHA-tagged image instead of `latest`
+
+> TLS was originally bundled into this stage but moved to Stage 4 — Cloudflare Tunnel already terminates TLS at the edge, so cert-manager belongs alongside the rest of the ingress hardening work.
 
 ### Stage 2 — GitOps with ArgoCD
 - [ ] `homelab-gitops` repo with Kustomize base/overlays (`dev` / `prod`)
@@ -66,6 +68,7 @@ flowchart LR
 
 ### Stage 4 — Secrets hygiene + Ingress hardening
 - [ ] Sealed Secrets or External Secrets Operator — no plaintext secrets in Git
+- [ ] cert-manager with DNS-01 solver for wildcard TLS on internal services (`*.lukadimnik.com`)
 - [ ] Traefik middlewares: rate limiting, security headers
 
 ### Stage 5 — Stateful workloads
@@ -89,6 +92,17 @@ flowchart LR
 ### Stage 9 — HA control plane
 - [ ] Three-node control plane with embedded etcd (after mini PC purchase)
 - [ ] Document etcd snapshots and graceful node drains
+
+---
+
+## Stage write-ups
+
+Each stage has a short doc covering decisions, challenges, and lessons learned.
+
+| Stage | Write-up |
+|-------|----------|
+| 0 — Foundation | [docs/stage-0-foundation.md](docs/stage-0-foundation.md) |
+| 1 — CI/CD + TLS | [docs/stage-1-ci-cd.md](docs/stage-1-ci-cd.md) |
 
 ---
 
