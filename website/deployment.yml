@@ -17,6 +17,7 @@ spec:
       containers:
         - name: website
           image: lukadimnik/website:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
 ---
