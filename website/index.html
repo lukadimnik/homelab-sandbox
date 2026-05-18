@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Luka — Engineering Manager & Software Developer</title>
+    <title>Luka Dimnik — Engineering Manager & Software Engineer</title>
     <meta
       name="description"
-      content="Personal site of Luka — engineering manager and software developer building thoughtful teams and reliable systems."
+      content="Luka Dimnik — Engineering Manager and Software Engineer based in Helsinki. I lead teams through messy domains, mid-stream pivots, and legacy codebases."
     />
     <meta name="theme-color" content="#0b0d12" />
 
-    <!-- Open Graph (placeholders) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Luka — Engineering Manager & Software Developer" />
+    <meta property="og:title" content="Luka Dimnik — Engineering Manager & Software Engineer" />
     <meta
       property="og:description"
-      content="Personal site of Luka — engineering manager and software developer."
+      content="I lead engineering teams through messy domains, mid-stream pivots, and legacy codebases — and ship what we promised."
     />
-    <meta property="og:image" content="assets/og-image.png" />
 
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c5cff'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='34' font-family='sans-serif' font-weight='700' fill='white'%3EL%3C/text%3E%3C/svg%3E" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -27,35 +26,33 @@
       <div class="container nav__inner">
         <a class="nav__logo" href="#top">
           <span class="nav__logo-mark">L</span>
-          <span class="nav__logo-text">Luka</span>
+          <span class="nav__logo-text">Luka Dimnik</span>
         </a>
-        <nav class="nav__links" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <!-- <nav class="nav__links" aria-label="Primary"> -->
+        <!--   <a href="#about">About</a> -->
+        <!--   <a href="#work">Work</a> -->
+        <!--   <a href="#contact">Contact</a> -->
+        <!-- </nav> -->
       </div>
     </header>
 
     <main id="top">
       <!-- HERO -->
       <section class="hero">
-        <div class="hero__bg" aria-hidden="true"></div>
         <div class="container hero__inner reveal">
-          <p class="hero__eyebrow">Hi, I'm Luka 👋</p>
-          <h1 class="hero__title">
-            Engineering Manager
-            <span class="grad">&amp;</span>
-            Software Developer
-          </h1>
+          <p class="hero__eyebrow">Engineering Manager · Software Engineer · Helsinki</p>
+          <h1 class="hero__title">Luka Dimnik</h1>
           <p class="hero__lede">
-            I build resilient software and the teams that ship it. I care about clear thinking,
-            calm execution, and the small details that compound into great products.
+            I lead engineering teams through messy domains, mid-stream pivots, and legacy
+            codebases — and ship what was promised.
+          </p>
+          <p class="hero__now">
+            <span class="hero__now-mark">Now</span> leading a 7-engineer team through a
+            seller-cost monolith migration at Ritchie Bros.
           </p>
           <div class="hero__cta">
             <a class="btn btn--primary" href="#contact">Get in touch</a>
-            <a class="btn btn--ghost" href="#projects">See my work →</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/lukadimnik/" target="_blank" rel="noopener">LinkedIn ↗</a>
           </div>
         </div>
       </section>
@@ -64,180 +61,176 @@
       <section id="about" class="section">
         <div class="container">
           <header class="section__header reveal">
-            <span class="section__kicker">01 — About</span>
-            <h2 class="section__title">A short introduction</h2>
+            <span class="section__kicker">About</span>
+            <h2 class="section__title">How I work</h2>
           </header>
 
           <div class="about reveal">
             <div class="about__bio">
               <p>
-                I'm an engineering leader with a developer's heart. I've spent the last decade
-                writing code, shipping products, and growing teams that take real ownership of the
-                things they build. I believe leadership is craft, just like software — practiced
-                quietly, refined over time, and measured in the outcomes of the people around you.
+                I lead engineering teams, and the part I care most about is whether the
+                people on them are doing the best work of their careers — and enjoying it.
+                My philosophy is simple: happy engineers are productive engineers. Every
+                team I've led has been measured in shipped features and migrations, but the
+                wins I'm proudest of are the people ones. The last team I led topped the
+                Culture Amp engagement survey across a ~50-engineer organization, and my
+                current team has run nine months through a founding period and a mid-year
+                domain pivot with zero attrition. Engineers there have told me, unprompted,
+                that they're doing the best work of their careers. I think a lot about what
+                makes that possible: clarity of direction, psychological safety, real
+                investment in growth conversations, and shielding the team from noise
+                without shielding them from context. When those are in place, delivery
+                takes care of itself.
               </p>
               <p>
-                Outside of work I tinker with my homelab, read more than I should, and try to keep
-                my side projects small enough to actually finish.
+                I'm a hands-on EM. I still write code, I run agentic development workflows
+                with Claude Code daily, and I've authored internal Claude skills my team
+                uses for codebase onboarding. I stay close enough to the work to make good
+                technical calls and clear obstacles fast, without getting in the team's
+                way. Happy to connect with other engineering leaders, especially on team
+                health, agentic workflows, and legacy modernizations.
               </p>
             </div>
-            <ul class="about__highlights">
-              <li>
-                <span class="about__num">10+</span>
-                <span class="about__label">years building software</span>
-              </li>
-              <li>
-                <span class="about__num">5+</span>
-                <span class="about__label">years leading teams</span>
-              </li>
-              <li>
-                <span class="about__num">∞</span>
-                <span class="about__label">1:1s and counting</span>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
-      <section id="experience" class="section section--alt">
-        <div class="container">
-          <header class="section__header reveal">
-            <span class="section__kicker">02 — Experience</span>
-            <h2 class="section__title">Where I've worked</h2>
-          </header>
-
-          <ol class="timeline">
-            <li class="timeline__item reveal">
-              <div class="timeline__dot"></div>
-              <div class="timeline__card">
-                <div class="timeline__meta">
-                  <span class="timeline__role">Engineering Manager</span>
-                  <span class="timeline__where">Acme Corp · 2022 — Present</span>
-                </div>
-                <ul class="timeline__bullets">
-                  <li>Led a team of 8 engineers shipping the core platform used by 1M+ users.</li>
-                  <li>Rebuilt the on-call process, cutting paging volume by 60% in one quarter.</li>
-                  <li>Hired, mentored, and grew three engineers into senior roles.</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="timeline__item reveal">
-              <div class="timeline__dot"></div>
-              <div class="timeline__card">
-                <div class="timeline__meta">
-                  <span class="timeline__role">Senior Software Engineer</span>
-                  <span class="timeline__where">Globex · 2019 — 2022</span>
-                </div>
-                <ul class="timeline__bullets">
-                  <li>Designed and shipped a real-time data pipeline handling 50k events/sec.</li>
-                  <li>Drove the migration from a monolith to a service-oriented architecture.</li>
-                  <li>Led the internal guild on testing practices and developer experience.</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="timeline__item reveal">
-              <div class="timeline__dot"></div>
-              <div class="timeline__card">
-                <div class="timeline__meta">
-                  <span class="timeline__role">Software Engineer</span>
-                  <span class="timeline__where">Initech · 2016 — 2019</span>
-                </div>
-                <ul class="timeline__bullets">
-                  <li>Built customer-facing features across the web and mobile clients.</li>
-                  <li>Owned the design system used by 30+ engineers.</li>
-                  <li>Promoted twice in three years.</li>
-                </ul>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="section">
-        <div class="container">
-          <header class="section__header reveal">
-            <span class="section__kicker">03 — Projects</span>
-            <h2 class="section__title">Things I've built</h2>
-          </header>
-
-          <div class="projects">
-            <article class="project reveal">
-              <h3 class="project__title">Homelab Platform</h3>
-              <p class="project__desc">
-                A self-hosted stack running media, photos, and personal services on a single mini
-                PC, fully reproducible from a Git repo.
-              </p>
-              <ul class="tags">
-                <li>Docker</li>
-                <li>k3s</li>
-                <li>Linux</li>
-              </ul>
-              <a class="project__link" href="#" aria-label="View Homelab Platform">View →</a>
-            </article>
-
-            <article class="project reveal">
-              <h3 class="project__title">Team Compass</h3>
-              <p class="project__desc">
-                A lightweight tool for engineering managers to run better 1:1s, track growth, and
-                spot patterns across a team over time.
-              </p>
-              <ul class="tags">
-                <li>TypeScript</li>
-                <li>Next.js</li>
-                <li>Postgres</li>
-              </ul>
-              <a class="project__link" href="#" aria-label="View Team Compass">View →</a>
-            </article>
-
-            <article class="project reveal">
-              <h3 class="project__title">Pulse</h3>
-              <p class="project__desc">
-                A tiny status-page service designed to be embarrassingly simple to deploy and
-                impossible to misconfigure.
-              </p>
-              <ul class="tags">
-                <li>Go</li>
-                <li>SQLite</li>
-                <li>HTMX</li>
-              </ul>
-              <a class="project__link" href="#" aria-label="View Pulse">View →</a>
-            </article>
-
-            <article class="project reveal">
-              <h3 class="project__title">Notes on Leadership</h3>
-              <p class="project__desc">
-                A small collection of essays on engineering management — what I've learned, what
-                I'm still figuring out, and what I wish someone had told me earlier.
-              </p>
-              <ul class="tags">
-                <li>Writing</li>
-                <li>Leadership</li>
-              </ul>
-              <a class="project__link" href="#" aria-label="View Notes on Leadership">Read →</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
+      <!-- <section id="stack" class="section section--alt"> -->
+      <!--   <div class="container"> -->
+      <!--     <header class="section__header reveal"> -->
+      <!--       <span class="section__kicker">Stack</span> -->
+      <!--       <h2 class="section__title">What I work with</h2> -->
+      <!--     </header> -->
+      <!---->
+      <!--     <dl class="stack reveal"> -->
+      <!--       <div class="stack__row"> -->
+      <!--         <dt>Languages</dt> -->
+      <!--         <dd> -->
+      <!--           <span class="stack__chip">TypeScript</span> -->
+      <!--           <span class="stack__chip">SQL</span> -->
+      <!--         </dd> -->
+      <!--       </div> -->
+      <!--       <div class="stack__row"> -->
+      <!--         <dt>Infrastructure</dt> -->
+      <!--         <dd> -->
+      <!--           <span class="stack__chip">Kubernetes</span> -->
+      <!--           <span class="stack__chip">AWS</span> -->
+      <!--           <span class="stack__chip">Terraform</span> -->
+      <!--           <span class="stack__chip">Docker</span> -->
+      <!--         </dd> -->
+      <!--       </div> -->
+      <!--       <div class="stack__row"> -->
+      <!--         <dt>Data</dt> -->
+      <!--         <dd> -->
+      <!--           <span class="stack__chip">PostgreSQL</span> -->
+      <!--           <span class="stack__chip">Kafka</span> -->
+      <!--           <span class="stack__chip">DynamoDB</span> -->
+      <!--         </dd> -->
+      <!--       </div> -->
+      <!--       <div class="stack__row"> -->
+      <!--         <dt>Observability</dt> -->
+      <!--         <dd> -->
+      <!--           <span class="stack__chip">Datadog</span> -->
+      <!--           <span class="stack__chip">Honeycomb</span> -->
+      <!--         </dd> -->
+      <!--       </div> -->
+      <!--       <div class="stack__row"> -->
+      <!--         <dt>AI workflows</dt> -->
+      <!--         <dd> -->
+      <!--           <span class="stack__chip">Claude Code</span> -->
+      <!--           <span class="stack__chip">OpenCode</span> -->
+      <!--           <span class="stack__chip">custom Claude skills</span> -->
+      <!--         </dd> -->
+      <!--       </div> -->
+      <!--       <div class="stack__row"> -->
+      <!--         <dt>CI</dt> -->
+      <!--         <dd> -->
+      <!--           <span class="stack__chip">GitHub Actions</span> -->
+      <!--           <span class="stack__chip">CircleCI</span> -->
+      <!--           <span class="stack__chip">Bitbucket Pipelines</span> -->
+      <!--         </dd> -->
+      <!--       </div> -->
+      <!--     </dl> -->
+      <!--   </div> -->
+      <!-- </section> -->
+      <!---->
+      <!-- SELECTED WORK -->
+      <!-- <section id="work" class="section section--alt"> -->
+      <!--   <div class="container"> -->
+      <!--     <header class="section__header reveal"> -->
+      <!--       <span class="section__kicker">Selected work</span> -->
+      <!--       <h2 class="section__title">A few things I've shipped</h2> -->
+      <!--     </header> -->
+      <!---->
+      <!--     <ol class="work"> -->
+      <!--       <li class="work__item reveal"> -->
+      <!--         <p class="work__meta">Engineering Manager · Ritchie Bros · Aug 2025 — Present</p> -->
+      <!--         <h3 class="work__headline"> -->
+      <!--           Pivoted a 7-engineer team mid-year from asset management to seller cost — -->
+      <!--           and shipped both. -->
+      <!--         </h3> -->
+      <!--         <p class="work__body"> -->
+      <!--           Stood up a new team in an unfamiliar Java 8 monolith and hit the November 2025 -->
+      <!--           asset-management deadline, then re-scoped the team into the cost domain and -->
+      <!--           migrated ~80% of cost logic in four months via strangler-fig — reverse-engineering -->
+      <!--           undocumented rules from a decade-old codebase using agentic workflows. -->
+      <!--         </p> -->
+      <!--         <p class="work__tech">Java Spring · Kubernetes · Kafka · GitHub Actions</p> -->
+      <!--       </li> -->
+      <!---->
+      <!--       <li class="work__item reveal"> -->
+      <!--         <p class="work__meta"> -->
+      <!--           Engineering Manager, Core Invoicing · Ageras · Dec 2024 — Jul 2025 -->
+      <!--         </p> -->
+      <!--         <h3 class="work__headline"> -->
+      <!--           Topped engagement across a 9-team, ~50-engineer organization. -->
+      <!--         </h3> -->
+      <!--         <p class="work__body"> -->
+      <!--           Led a 6-engineer team owning the invoicing domain end-to-end. Promoted a -->
+      <!--           mid-level engineer to senior, migrated 90% of the invoice-sending service -->
+      <!--           off Clojure, and consolidated incident response into a single playbook -->
+      <!--           adopted by three domains. -->
+      <!--         </p> -->
+      <!--       </li> -->
+      <!---->
+      <!--       <li class="work__item reveal"> -->
+      <!--         <p class="work__meta"> -->
+      <!--           Engineering Manager, IAM & Billing · Ageras · Apr 2023 — Nov 2024 -->
+      <!--         </p> -->
+      <!--         <h3 class="work__headline"> -->
+      <!--           Built the observability and CI/CD that turned weekly deploys into daily ones. -->
+      <!--         </h3> -->
+      <!--         <p class="work__body"> -->
+      <!--           Led 4 engineers across auth and subscriptions. Shipped Datadog dashboards -->
+      <!--           that cut incidents 40% and RUM errors 80% in seven months, designed a -->
+      <!--           GitHub Actions + Terraform pipeline, migrated 14 repos off Bitbucket, and -->
+      <!--           drove test coverage from 50% to 80%. -->
+      <!--         </p> -->
+      <!--         <p class="work__tech">TypeScript · Node.js · AWS · Terraform · Datadog</p> -->
+      <!--       </li> -->
+      <!--     </ol> -->
+      <!--   </div> -->
+      <!-- </section> -->
+      <!---->
       <!-- CONTACT -->
-      <section id="contact" class="section section--alt">
+      <section id="contact" class="section">
         <div class="container contact reveal">
           <header class="section__header">
-            <span class="section__kicker">04 — Contact</span>
-            <h2 class="section__title">Let's talk</h2>
+            <span class="section__kicker">Contact</span>
+            <h2 class="section__title">Get in touch</h2>
           </header>
           <p class="contact__lede">
-            Looking for a thoughtful engineering leader, want to swap notes on management, or just
-            feel like saying hi? My inbox is open.
+            Reachable for engineering roles, advisory work, and good coffee in Helsinki.
           </p>
-          <a class="btn btn--primary btn--lg" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="btn btn--primary btn--lg" href="mailto:luka.dimnik@protonmail.com">
+            luka.dimnik@protonmail.com
+          </a>
           <ul class="socials">
-            <li><a href="#" rel="noopener">GitHub</a></li>
-            <li><a href="#" rel="noopener">LinkedIn</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/lukadimnik/" target="_blank" rel="noopener">
+                LinkedIn ↗
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -245,7 +238,7 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <p>© <span id="year"></span> Luka — built by hand, no frameworks.</p>
+        <p>© <span id="year"></span> Luka Dimnik</p>
       </div>
     </footer>
 
