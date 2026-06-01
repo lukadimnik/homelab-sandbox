@@ -1,0 +1,29 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Secrets — never commit
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+kubeconfig
+kubeconfig.*
+*credentials*.json
+*credentials*.yaml
+*credentials*.yml
+
+# CI / scan artifacts (in case you run the workflow steps locally)
+trivy-results.sarif
+sbom.spdx.json
+
+# Local notes — not for the public repo
+*.local.md
+scratch/
