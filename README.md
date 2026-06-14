@@ -55,9 +55,9 @@ flowchart LR
 
 > TLS was originally bundled into this stage but moved to Stage 4 — Cloudflare Tunnel already terminates TLS at the edge, so cert-manager belongs alongside the rest of the ingress hardening work.
 
-### Stage 2 — GitOps with ArgoCD
+### Stage 2 — GitOps with Flux
 - [ ] `homelab-gitops` repo with Kustomize base/overlays (`dev` / `prod`)
-- [ ] App-of-apps pattern — ArgoCD reconciles all cluster state including itself
+- [ ] Flux bootstrapped against the repo — a root `Kustomization` reconciles all cluster state, including Flux itself
 - [ ] Goal: rebuild the entire cluster from Git with one command
 
 ### Stage 3 — Observability
@@ -79,7 +79,7 @@ flowchart LR
 ### Stage 6 — GPU workloads
 - [ ] NVIDIA device plugin for Kubernetes
 - [ ] Ollama running Llama 3 on the 1080 Ti, scheduled via node affinity
-- [ ] Small app consuming the inference endpoint, deployed through ArgoCD
+- [ ] Small app consuming the inference endpoint, deployed through Flux
 
 ### Stage 7 — IaC for the nodes
 - [ ] Ansible playbooks: install k3s, configure UFW, set up SSH keys, join workers
